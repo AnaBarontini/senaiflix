@@ -1,37 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Primeira Página HTML + CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="topo">
+      <img src="" alt="Logotipo da Página" class="logo"/>
 
-        <img src="" alt="">
-
-        <h1>HTML + CSS: Fundamentos</h1>
-        <p class="subtitulo">Estrutura, tags básicas, seletores e box model</p>
-        <nav aria-label="Navegação principal">
-            <ul class="menu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#conteudo">Conteudo</a></li>
-                <li><a href="#tabela">Tabela</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <h1>HTML + CSS: Fundamentos</h1>
+      <p class="subtitulo">Estrutura, tags básicas, seletores e box model</p>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#conteudo">Conteudo</a></li>
+          <li><a href="#tabela">Tabela</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main class="container">
-        <section id="Sobre" class="card">
-            <h2>Sobre esta página</h2>
-            <p>Esta é uma página de exemplo para ensinar <strong>HTML</strong> e <em>CSS</em> do zero. Observe a
-                estrutura do código, os comentários e o estilo aplicado.</p>
-        </section>
-        <!---->
+      <section id="Sobre" class="card">
+        <h2>Sobre esta página</h2>
+        <p>
+          Esta é uma página de exemplo para ensinar <strong>HTML</strong> e
+          <em>CSS</em> do zero. Observe a estrutura do código, os comentários e
+          o estilo aplicado.
+        </p>
+        <h3>O que vamos ver:</h3>
+        <ul>
+          <li>Estrutura básica do HTML</li>
+          <li>Seletores CSS: elemento, classe e id</li>
+          <li>Box model margin, padding e border</li>
+          <li>Links, imagens, listas e tabelas</li>
+          <li>Formulário simples e responsividade</li>
+        </ul>
+        <p>
+          Dica: consulte a documenação do MDN
+          <a href="https://developer.mozilla.org/en-US" target="_blank"
+            >aqui
+          </a>
+        </p>
+      </section>
+
+    <section id="conteudo" class="card">
+        <h2>Conceitos de CSS essenciais</h2>
+        <article class="caixa">
+          <h3>Seletores &amp; Especificidade</h3>
+          <p>
+            Regras CSS podem mirar em elementos, classes ou ids. Quando há
+            conflito, o navegador escolhe pela prioridade: id > class > elemento
+          </p>
+          <p id="desatque">Este parágrafo tem um ID para destaque</p>
+        </article>
+
+        <article class="caixa">
+          <h3>Box Model</h3>
+          <p>Todo elemento em bloco possui content, pdding, border e margin.</p>
+          <div class="box-model-demo">Sou uma Caixa</div>
+        </article>
+
+        <article class="caixa">
+          <h3>Display: inline vs block</h3>
+          <p>
+            <span class="tag-inline">span inline</span> fica na linha, enquanto
+            elementos quebram linha.
+          </p>
+        </article>
+    </section>
+
+      <!--Seção Formulário-->
+      <section id="tabela" class="card">
+        <h2>Tabela de horários (exemplo)</h2>
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Conteúdo</th>
+              <th>Duração</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Segunda</td>
+              <td>Estrutura HTML</td>
+            </tr>
+            <tr>
+              <td>Quarta</td>
+              <td>Seletores e Box Model</td>
+            </tr>
+            <tr>
+              <td>Sexta</td>
+              <td>Formulário e Responsivo</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!--Seção Formulário-->
+      <section id="contato" class="card">
+        <h2>Fale conosco</h2>
+        <form action="#" class="formulario" method="post">
+            <div class="grupo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome"
+                required>
+            </div>
+            <div class="grupo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+            </div>
+            <div class="grupo">
+                <label for="mensagem"></label>
+                <textarea name="mensagem" id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+      </section>
     </main>
-</body>
+    <!--Rodapé-->
+    <footer class="rodape">
+        <small>&copy; 2025 . Página didática para aula de HTML + CSS</small>
+    </footer>
+  </body>
 </html>
