@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 80px;
+    height: 70px;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+footer p {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.imgs {
+    display: flex;
+}
+
+img {
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 15px 20px;
+        height: 60px;
+        font-size: 1em;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+}

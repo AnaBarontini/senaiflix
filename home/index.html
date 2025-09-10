@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SENAIFLIX - Filmes e Séries</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="../assets/styles/global.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="index.html">SENAIFLIX</a>
+      <img id="menu-btn" class="hamburger-menu" src="../assets/icons/material-symbols_menu (1).png" alt="">
+      <nav>
+        <a href="#">Início</a>
+        <a href="#titulo-filmes">Filmes</a>
+        <a href="#titulo-series">Séries</a>
+      </nav>
+      <nav class="menu-mobile" id="menu-mobile">
+        <a href="#">Início</a>
+        <a href="#titulo-filmes">Filmes</a>
+        <a href="#titulo-series">Séries</a>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="div-banner">
+          <h2>Assista agora!</h2>
+          <p>
+            Ao saber que tem câncer, um professor passa a fabricar metanfetamina
+            pelo futuro da família, mudando o destino de todos.
+          </p>
+        </div>
+      </section>
+      <div class="inputs">
+        <div class="pesquisa">
+          <label for="pesquisar">Pesquise por filmes e/ou séries:</label>
+          <input type="text" placeholder="Insira um título" id="pesquisar" />
+        </div>
+
+        <div class="filtro">
+          <label for="genero">Filtrar por gênero:</label>
+          <select name="genero" id="genero">
+            <option selected value="">Selecione um gênero</option>
+            <option value="Drama">Drama</option>
+            <option value="Romance">Romance</option>
+            <option value="Terror">Terror</option>
+            <option value="Ficção científica">Ficção científica</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Ação">Ação</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Animação">Animação</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Crime">Crime</option>
+            <option value="Fantasia">Fantasia</option>
+            <option value="Mistério">Mistério</option>
+            <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+          </select>
+          <button id="limpar-filtro" class="limpar-filtros">Limpar filtros</button>
+        </div>
+      </div>
+      <section class="filmes-series">
+        <h2 id="titulo-filmes">Filmes</h2>
+        <div id="filmes-container" class="card-container">
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+        </div>
+      </section>
+      <section class="filmes-series">
+        <h2 id="titulo-series">Séries</h2>
+        <div id="series-container" class="card-container">
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+          <a href="../detalhes-do-filme/index.html" class="card"></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Nos sigam nas redes sociais</p>
+      <div class="imgs">
+        <img src="../assets/imgs/mdi_twitter.svg" alt="Logo do Twitter" />
+        <img
+          src="../assets/imgs/ri_instagram-fill.svg"alt="Logo do Instagram"/>
+        <img src="../assets/imgs/mdi_youtube.svg" alt="Logo do Youtube" />
+      </div>
+    </footer>
+  </body>
+
+  <script src="../scripts/script.js"></script>
+</html>
